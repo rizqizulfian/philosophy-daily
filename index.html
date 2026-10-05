@@ -1,431 +1,302 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 
-  <meta charset="UTF-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<title>Philosophy Daily</title>
 
-  <title>Philosophy Daily — 4 Oktober 2026</title>
+<style>
 
-  <style>
+* {
+  box-sizing: border-box;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  background: #f7f6f2;
+  color: #171717;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
 
-    body {
-      margin: 0;
-      background: #f5f3ef;
-      color: #202020;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-      line-height: 1.7;
-    }
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
 
-    .container {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 60px 0;
-    }
+/* HEADER */
 
-    .header {
-      text-align: center;
-      margin-bottom: 70px;
-    }
+.header {
+  border-bottom: 1px solid #d8d6d0;
+  padding-bottom: 28px;
+  margin-bottom: 60px;
+}
 
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 12px;
-      color: #777;
-      margin-bottom: 15px;
-    }
+.brand {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  letter-spacing: -1.5px;
+  margin: 0 0 10px;
+}
 
-    h1 {
-      margin: 0;
-      font-family: Georgia, serif;
-      font-size: clamp(42px, 8vw, 72px);
-      font-weight: 500;
-      line-height: 1;
-    }
+.subtitle {
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
 
-    .date {
-      margin-top: 20px;
-      color: #777;
-      font-size: 15px;
-    }
+.date {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
 
-    .intro {
-      max-width: 550px;
-      margin: 25px auto 0;
-      color: #555;
-    }
+/* ARTICLE */
 
-    .article {
-      background: white;
-      margin-bottom: 50px;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.06);
-    }
+.article-card {
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #d8d6d0;
+}
 
-    .article-image {
-      display: block;
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-    }
+.article-number {
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
 
-    .article-content {
-      padding: 42px;
-    }
+.article-image {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 30px;
+}
 
-    .article-number {
-      padding: 25px 42px 0;
-      color: #999;
-      font-family: Georgia, serif;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
+.article-content h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
 
-    h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(30px, 5vw, 46px);
-      line-height: 1.15;
-      font-weight: 500;
-      margin: 10px 0 15px;
-    }
+.meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 38px;
+}
 
-    .meta {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 40px;
-    }
+.section {
+  margin-bottom: 28px;
+}
 
-    section {
-      margin-top: 32px;
-    }
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 10px;
+}
 
-    h3 {
-      font-size: 13px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
+.section p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  color: #333;
+}
 
-    p {
-      margin: 0;
-      color: #444;
-    }
+.insight {
+  font-family: Georgia, serif;
+  font-size: 20px !important;
+  line-height: 1.55 !important;
+  color: #171717 !important;
+}
 
-    ul {
-      padding-left: 22px;
-      color: #444;
-    }
+.why {
+  max-width: 680px;
+}
 
-    .question {
-      background: #f5f3ef;
-      padding: 25px;
-      border-radius: 12px;
-    }
+.read-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  border-bottom: 1px solid #171717;
+  padding-bottom: 4px;
+}
 
-    .concepts {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
+.read-link:hover {
+  opacity: 0.55;
+}
 
-    .concepts span {
-      background: #eee;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-    }
+/* FOOTER */
 
-    .read-button {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 12px 20px;
-      border-radius: 999px;
-      background: #202020;
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
+.footer {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding-top: 20px;
+}
 
-    .footer {
-      text-align: center;
-      color: #999;
-      font-size: 13px;
-      padding: 30px 0;
-    }
+/* MOBILE */
 
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
 
-      .container {
-        padding: 35px 0;
-      }
+  .container {
+    padding: 40px 20px 70px;
+  }
 
-      .header {
-        margin-bottom: 40px;
-      }
+  .brand {
+    font-size: 34px;
+  }
 
-      .article-image {
-        height: 230px;
-      }
+  .article-content h2 {
+    font-size: 28px;
+  }
 
-      .article-content {
-        padding: 28px;
-      }
+  .insight {
+    font-size: 18px !important;
+  }
 
-      .article-number {
-        padding: 20px 28px 0;
-      }
+}
 
-    }
-
-  </style>
-
+</style>
 </head>
 
 <body>
 
-  <main class="container">
+<div class="container">
 
-    <header class="header">
+  <header class="header">
+    <h1 class="brand">Philosophy Daily</h1>
 
-      <div class="eyebrow">
-        Daily Philosophy Digest
-      </div>
+    <div class="subtitle">
+      Five ideas worth thinking about today.
+    </div>
 
-      <h1>Philosophy Daily</h1>
+    <div class="date">
+      October 5, 2026
+    </div>
+  </header>
 
-      <div class="date">
-        4 Oktober 2026
-      </div>
-
-      <p class="intro">
-        Lima artikel filosofi pilihan untuk dibaca,
-        dipikirkan, dan diperdebatkan hari ini.
-      </p>
-
-    </header>
-
+  <main>
     
-    <article class="article">
+    <article class="article-card">
 
       <div class="article-number">
         01
       </div>
 
       
-            <img
-              class="article-image"
-              src="https://miro.medium.com/v2/resize:fit:1200/1*hPv3fdYJYqphAnDk9XvQZw.png"
-              alt="Vedanta through Dṛg-Dṛśya-Viveka: Part 1"
-            />
-          
+        <img
+          class="article-image"
+          src="https://miro.medium.com/v2/resize:fit:1200/1*aNsGkVI6CrHBFFwKmkRzyA.jpeg"
+          alt="Does Economic Growth guarantee Happiness?"
+        />
+      
 
       <div class="article-content">
 
-        <h2>Vedanta through Dṛg-Dṛśya-Viveka: Part 1</h2>
+        <h2>Does Economic Growth guarantee Happiness?</h2>
 
         <div class="meta">
-          <span>👤 Shoe</span>
-          <span>⏱️ 5 menit baca</span>
+          Arpan Jha · 3 min read
         </div>
 
-        <section>
-          <h3>📌 Ringkasan</h3>
-          <p></p>
-        </section>
+        <div class="section">
+          <div class="label">KEY INSIGHT</div>
+          <p class="insight">Mengapa data yang membuktikan dunia semakin aman dan makmur justru memicu ketegangan batin yang tak bisa diredam oleh angka GDP?</p>
+        </div>
 
-        <section class="question">
-          <h3>❓ Pertanyaan Utama</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>💡 Ide Utama</h3>
-          <ul>
-            
-          </ul>
-        </section>
-
-        
-
-        <section>
-          <h3>✨ Mengapa Menarik?</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>🔎 Perspektif Kritis</h3>
-          <p></p>
-        </section>
+        <div class="section why">
+          <div class="label">WHY IT MATTERS</div>
+          <p>Pertanyaan ini memaksa kita meninjau ulang definisi kemajuan, karena jika kebahagiaan tidak sebanding dengan kekayaan material, maka kita mungkin sedang mengejar ilusi yang mengosongkan makna hidup kita.</p>
+        </div>
 
         <a
-          class="read-button"
-          href="https://medium.com/@shashwat7031/vedanta-through-d%E1%B9%9Bg-d%E1%B9%9B%C5%9Bya-viveka-part-1-cc1fb66b336e"
+          class="read-link"
+          href="https://medium.com/illumination/does-economic-growth-guarantee-happiness-bf776d4c7bc9"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Baca Artikel Asli →
+          READ THE ORIGINAL →
         </a>
 
       </div>
 
     </article>
   
-    <article class="article">
+    <article class="article-card">
 
       <div class="article-number">
         02
       </div>
 
       
-            <img
-              class="article-image"
-              src="https://miro.medium.com/v2/resize:fit:365/0*Et8Jmf265sJ8AieX.jpg"
-              alt="The Ontology of Relational Complexity"
-            />
-          
-
-      <div class="article-content">
-
-        <h2>The Ontology of Relational Complexity</h2>
-
-        <div class="meta">
-          <span>👤 Silas O&#039;Creamy</span>
-          <span>⏱️ 5 menit baca</span>
-        </div>
-
-        <section>
-          <h3>📌 Ringkasan</h3>
-          <p></p>
-        </section>
-
-        <section class="question">
-          <h3>❓ Pertanyaan Utama</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>💡 Ide Utama</h3>
-          <ul>
-            
-          </ul>
-        </section>
-
-        
-
-        <section>
-          <h3>✨ Mengapa Menarik?</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>🔎 Perspektif Kritis</h3>
-          <p></p>
-        </section>
-
-        <a
-          class="read-button"
-          href="https://medium.com/@atranspl.ltd/the-ontology-of-relational-complexity-3bf822d3a658"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Baca Artikel Asli →
-        </a>
-
-      </div>
-
-    </article>
-  
-    <article class="article">
-
-      <div class="article-number">
-        03
-      </div>
-
+        <img
+          class="article-image"
+          src="https://miro.medium.com/v2/resize:fit:1200/1*0qDFN13uAI2tmw1jND8gjQ@2x.jpeg"
+          alt="The Tower of Babel as an allegory"
+        />
       
-            <img
-              class="article-image"
-              src="https://miro.medium.com/v2/resize:fit:1023/1*Te6b-EENqKhJ-7BGayYR3g.png"
-              alt="How Even a Necessary God Does NOT Explain This Universe"
-            />
-          
 
       <div class="article-content">
 
-        <h2>How Even a Necessary God Does NOT Explain This Universe</h2>
+        <h2>The Tower of Babel as an allegory</h2>
 
         <div class="meta">
-          <span>👤 André Rabelo</span>
-          <span>⏱️ 17 menit baca</span>
+          Susie Sarkozy · 19 min read
         </div>
 
-        <section>
-          <h3>📌 Ringkasan</h3>
-          <p></p>
-        </section>
+        <div class="section">
+          <div class="label">KEY INSIGHT</div>
+          <p class="insight">Apakah kekacauan Babel bukan tentang hilangnya bahasa, melainkan tentang hilangnya kepercayaan kita terhadap sinyal internal &#039;ya&#039; dan &#039;tidak&#039; yang sudah ada jauh sebelum kata-kata diciptakan?</p>
+        </div>
 
-        <section class="question">
-          <h3>❓ Pertanyaan Utama</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>💡 Ide Utama</h3>
-          <ul>
-            
-          </ul>
-        </section>
-
-        
-
-        <section>
-          <h3>✨ Mengapa Menarik?</h3>
-          <p></p>
-        </section>
-
-        <section>
-          <h3>🔎 Perspektif Kritis</h3>
-          <p></p>
-        </section>
+        <div class="section why">
+          <div class="label">WHY IT MATTERS</div>
+          <p>Ini menantang asumsi bahwa identitas diri dibangun melalui pembelajaran sosial, dan mengungkap bagaimana kepatuhan yang dipaksakan dapat memisahkan kita dari realitas batin kita sendiri.</p>
+        </div>
 
         <a
-          class="read-button"
-          href="https://medium.com/@andre.rabelo_philosophy/how-even-a-necessary-god-does-not-explain-this-universe-b75446f3bfec"
+          class="read-link"
+          href="https://medium.com/@susie_69949/the-tower-of-babel-as-an-allegory-60ec78fcbd90"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Baca Artikel Asli →
+          READ THE ORIGINAL →
         </a>
 
       </div>
 
     </article>
   
-
-    <footer class="footer">
-      Generated with AI · Philosophy Daily
-    </footer>
-
   </main>
 
-</body>
+  <footer class="footer">
+    Philosophy Daily
+  </footer>
 
+</div>
+
+</body>
 </html>
